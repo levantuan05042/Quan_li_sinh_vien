@@ -1,0 +1,1068 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A428B33-183E-48BC-B68E-5E17C293A9BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bai_tap_lon</RootNamespace>
+    <AssemblyName>Bai_tap_lon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Desktop\Quản Lí Sinh Viên\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Quản lí sinh viên</ProductName>
+    <PublisherName>LETUAN</PublisherName>
+    <SuiteName>LETUAN</SuiteName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B979509CB47ED6587714A619D25CA83703DB7BE6</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Bai_tap_lon_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1586.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1586.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bao_cao\baocao_cs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bao_cao\baocao_cs.Designer.cs">
+      <DependentUpon>baocao_cs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bao_cao\baocao_diem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bao_cao\baocao_diem.Designer.cs">
+      <DependentUpon>baocao_diem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bao_cao\baocao_gv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bao_cao\baocao_gv.Designer.cs">
+      <DependentUpon>baocao_gv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bao_cao\baocao_khoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bao_cao\baocao_khoa.Designer.cs">
+      <DependentUpon>baocao_khoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bao_cao\baocao_lop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bao_cao\baocao_lop.Designer.cs">
+      <DependentUpon>baocao_lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bao_cao\baocao_sv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bao_cao\baocao_sv.Designer.cs">
+      <DependentUpon>baocao_sv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bao_cao\baocao_monhoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bao_cao\baocao_monhoc.Designer.cs">
+      <DependentUpon>baocao_monhoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diem_gv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diem_gv.Designer.cs">
+      <DependentUpon>Diem_gv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="He_thong\khoiphuc_mknd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="He_thong\khoiphuc_mknd.Designer.cs">
+      <DependentUpon>khoiphuc_mknd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="He_thong\mo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="He_thong\mo.Designer.cs">
+      <DependentUpon>mo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet28.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet28.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Quan_li\chinhsach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quan_li\chinhsach.Designer.cs">
+      <DependentUpon>chinhsach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="He_thong\dangki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="He_thong\dangki.Designer.cs">
+      <DependentUpon>dangki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="He_thong\dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="He_thong\dangnhap.Designer.cs">
+      <DependentUpon>dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="He_thong\doimk_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="He_thong\doimk_admin.Designer.cs">
+      <DependentUpon>doimk_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quan_li\diem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quan_li\diem.Designer.cs">
+      <DependentUpon>diem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quan_li\GiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quan_li\GiaoVien.Designer.cs">
+      <DependentUpon>GiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quan_li\monhoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quan_li\monhoc.Designer.cs">
+      <DependentUpon>monhoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tai_khoan\TaiKhoanChung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tai_khoan\TaiKhoanChung.Designer.cs">
+      <DependentUpon>TaiKhoanChung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Tai_khoan\ql_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tai_khoan\ql_admin.Designer.cs">
+      <DependentUpon>ql_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quan_li\khoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quan_li\khoa.Designer.cs">
+      <DependentUpon>khoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quan_li\Lop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quan_li\Lop.Designer.cs">
+      <DependentUpon>Lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_admin.Designer.cs">
+      <DependentUpon>menu_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tai_khoan\ql_giaovien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tai_khoan\ql_giaovien.Designer.cs">
+      <DependentUpon>ql_giaovien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Tai_khoan\ql_truongkhoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tai_khoan\ql_truongkhoa.Designer.cs">
+      <DependentUpon>ql_truongkhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet51.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet51.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_SinhVienDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SinhVienDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Tai_khoan\ql_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tai_khoan\ql_user.Designer.cs">
+      <DependentUpon>ql_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quan_li\sinhvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quan_li\sinhvien.Designer.cs">
+      <DependentUpon>sinhvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="He_thong\ThoiGianCho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="He_thong\ThoiGianCho.Designer.cs">
+      <DependentUpon>ThoiGianCho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="He_thong\thongtinnguoidung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="He_thong\thongtinnguoidung.Designer.cs">
+      <DependentUpon>thongtinnguoidung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tim_kiem\timkiem_chinhsach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tim_kiem\timkiem_chinhsach.Designer.cs">
+      <DependentUpon>timkiem_chinhsach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tim_kiem\tk_giaovien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tim_kiem\tk_giaovien.Designer.cs">
+      <DependentUpon>tk_giaovien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tim_kiem\tk_khoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tim_kiem\tk_khoa.Designer.cs">
+      <DependentUpon>tk_khoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tim_kiem\tk_lop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tim_kiem\tk_lop.Designer.cs">
+      <DependentUpon>tk_lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tim_kiem\tk_monhoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tim_kiem\tk_monhoc.Designer.cs">
+      <DependentUpon>tk_monhoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tim_kiem\tk_sv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tim_kiem\tk_sv.Designer.cs">
+      <DependentUpon>tk_sv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thong_tin\tt_chinhsach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thong_tin\tt_chinhsach.Designer.cs">
+      <DependentUpon>tt_chinhsach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thong_tin\tt_diem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thong_tin\tt_diem.Designer.cs">
+      <DependentUpon>tt_diem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thong_tin\tt_giaovien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thong_tin\tt_giaovien.Designer.cs">
+      <DependentUpon>tt_giaovien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thong_tin\tt_khoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thong_tin\tt_khoa.Designer.cs">
+      <DependentUpon>tt_khoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thong_tin\tt_lop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thong_tin\tt_lop.Designer.cs">
+      <DependentUpon>tt_lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thong_tin\tt_monhoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thong_tin\tt_monhoc.Designer.cs">
+      <DependentUpon>tt_monhoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thong_tin\tt_sinhvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thong_tin\tt_sinhvien.Designer.cs">
+      <DependentUpon>tt_sinhvien.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bao_cao\baocao_cs.rdlc" />
+    <EmbeddedResource Include="Bao_cao\baocao_cs.resx">
+      <DependentUpon>baocao_cs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bao_cao\baocao_diem.rdlc" />
+    <EmbeddedResource Include="Bao_cao\baocao_diem.resx">
+      <DependentUpon>baocao_diem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bao_cao\baocao_gv.rdlc" />
+    <EmbeddedResource Include="Bao_cao\baocao_gv.resx">
+      <DependentUpon>baocao_gv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bao_cao\baocao_khoa.rdlc" />
+    <EmbeddedResource Include="Bao_cao\baocao_khoa.resx">
+      <DependentUpon>baocao_khoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bao_cao\baocao_lop.rdlc" />
+    <EmbeddedResource Include="Bao_cao\baocao_lop.resx">
+      <DependentUpon>baocao_lop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bao_cao\baocao_sv.resx">
+      <DependentUpon>baocao_sv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bao_cao\baocao_monhoc.rdlc" />
+    <EmbeddedResource Include="Bao_cao\baocao_monhoc.resx">
+      <DependentUpon>baocao_monhoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diem_gv.resx">
+      <DependentUpon>Diem_gv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="He_thong\khoiphuc_mknd.resx">
+      <DependentUpon>khoiphuc_mknd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="He_thong\mo.resx">
+      <DependentUpon>mo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quan_li\chinhsach.resx">
+      <DependentUpon>chinhsach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="He_thong\dangki.resx">
+      <DependentUpon>dangki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="He_thong\dangnhap.resx">
+      <DependentUpon>dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="He_thong\doimk_admin.resx">
+      <DependentUpon>doimk_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quan_li\diem.resx">
+      <DependentUpon>diem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quan_li\GiaoVien.resx">
+      <DependentUpon>GiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quan_li\khoa.resx">
+      <DependentUpon>khoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quan_li\Lop.resx">
+      <DependentUpon>Lop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_admin.resx">
+      <DependentUpon>menu_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quan_li\monhoc.resx">
+      <DependentUpon>monhoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Bao_cao\Report1.rdlc" />
+    <EmbeddedResource Include="Tai_khoan\TaiKhoanChung.resx">
+      <DependentUpon>TaiKhoanChung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tai_khoan\ql_admin.resx">
+      <DependentUpon>ql_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tai_khoan\ql_giaovien.resx">
+      <DependentUpon>ql_giaovien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tai_khoan\ql_truongkhoa.resx">
+      <DependentUpon>ql_truongkhoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tai_khoan\ql_user.resx">
+      <DependentUpon>ql_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quan_li\sinhvien.resx">
+      <DependentUpon>sinhvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="He_thong\ThoiGianCho.resx">
+      <DependentUpon>ThoiGianCho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="He_thong\thongtinnguoidung.resx">
+      <DependentUpon>thongtinnguoidung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tim_kiem\timkiem_chinhsach.resx">
+      <DependentUpon>timkiem_chinhsach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tim_kiem\tk_giaovien.resx">
+      <DependentUpon>tk_giaovien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tim_kiem\tk_khoa.resx">
+      <DependentUpon>tk_khoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tim_kiem\tk_lop.resx">
+      <DependentUpon>tk_lop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tim_kiem\tk_monhoc.resx">
+      <DependentUpon>tk_monhoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tim_kiem\tk_sv.resx">
+      <DependentUpon>tk_sv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thong_tin\tt_chinhsach.resx">
+      <DependentUpon>tt_chinhsach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thong_tin\tt_diem.resx">
+      <DependentUpon>tt_diem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thong_tin\tt_giaovien.resx">
+      <DependentUpon>tt_giaovien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thong_tin\tt_khoa.resx">
+      <DependentUpon>tt_khoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thong_tin\tt_lop.resx">
+      <DependentUpon>tt_lop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thong_tin\tt_monhoc.resx">
+      <DependentUpon>tt_monhoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thong_tin\tt_sinhvien.resx">
+      <DependentUpon>tt_sinhvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Bai_tap_lon_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QL_SinhVienDataSet.xsc">
+      <DependentUpon>QL_SinhVienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet.xss">
+      <DependentUpon>QL_SinhVienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet1.xsc">
+      <DependentUpon>QL_SinhVienDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet1.xss">
+      <DependentUpon>QL_SinhVienDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet10.xsc">
+      <DependentUpon>QL_SinhVienDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet10.xss">
+      <DependentUpon>QL_SinhVienDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet11.xsc">
+      <DependentUpon>QL_SinhVienDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet11.xss">
+      <DependentUpon>QL_SinhVienDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet12.xsc">
+      <DependentUpon>QL_SinhVienDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet12.xss">
+      <DependentUpon>QL_SinhVienDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet13.xsc">
+      <DependentUpon>QL_SinhVienDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet13.xss">
+      <DependentUpon>QL_SinhVienDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet14.xsc">
+      <DependentUpon>QL_SinhVienDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet14.xss">
+      <DependentUpon>QL_SinhVienDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet15.xsc">
+      <DependentUpon>QL_SinhVienDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet15.xss">
+      <DependentUpon>QL_SinhVienDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet16.xsc">
+      <DependentUpon>QL_SinhVienDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet16.xss">
+      <DependentUpon>QL_SinhVienDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet17.xsc">
+      <DependentUpon>QL_SinhVienDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet17.xss">
+      <DependentUpon>QL_SinhVienDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet18.xsc">
+      <DependentUpon>QL_SinhVienDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet18.xss">
+      <DependentUpon>QL_SinhVienDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet19.xsc">
+      <DependentUpon>QL_SinhVienDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet19.xss">
+      <DependentUpon>QL_SinhVienDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet2.xsc">
+      <DependentUpon>QL_SinhVienDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet2.xss">
+      <DependentUpon>QL_SinhVienDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet20.xsc">
+      <DependentUpon>QL_SinhVienDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet20.xss">
+      <DependentUpon>QL_SinhVienDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet21.xsc">
+      <DependentUpon>QL_SinhVienDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet21.xss">
+      <DependentUpon>QL_SinhVienDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet22.xsc">
+      <DependentUpon>QL_SinhVienDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet22.xss">
+      <DependentUpon>QL_SinhVienDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet23.xsc">
+      <DependentUpon>QL_SinhVienDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet23.xss">
+      <DependentUpon>QL_SinhVienDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet24.xsc">
+      <DependentUpon>QL_SinhVienDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet24.xss">
+      <DependentUpon>QL_SinhVienDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet25.xsc">
+      <DependentUpon>QL_SinhVienDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet25.xss">
+      <DependentUpon>QL_SinhVienDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet26.xsc">
+      <DependentUpon>QL_SinhVienDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet26.xss">
+      <DependentUpon>QL_SinhVienDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet27.xsc">
+      <DependentUpon>QL_SinhVienDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet27.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet27.xss">
+      <DependentUpon>QL_SinhVienDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet28.xsc">
+      <DependentUpon>QL_SinhVienDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet28.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet28.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet28.xss">
+      <DependentUpon>QL_SinhVienDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet3.xsc">
+      <DependentUpon>QL_SinhVienDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet3.xss">
+      <DependentUpon>QL_SinhVienDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet4.xsc">
+      <DependentUpon>QL_SinhVienDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet4.xss">
+      <DependentUpon>QL_SinhVienDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet51.xsc">
+      <DependentUpon>QL_SinhVienDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet51.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet51.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet51.xss">
+      <DependentUpon>QL_SinhVienDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet6.xsc">
+      <DependentUpon>QL_SinhVienDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet6.xss">
+      <DependentUpon>QL_SinhVienDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet7.xsc">
+      <DependentUpon>QL_SinhVienDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet7.xss">
+      <DependentUpon>QL_SinhVienDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet8.xsc">
+      <DependentUpon>QL_SinhVienDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet8.xss">
+      <DependentUpon>QL_SinhVienDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet9.xsc">
+      <DependentUpon>QL_SinhVienDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SinhVienDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SinhVienDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SinhVienDataSet9.xss">
+      <DependentUpon>QL_SinhVienDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Screenshot 2023-10-13 190414.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4766259617936_61af4c310f0ea8a84c34227e2344a716.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4815261539685_1a3cdbf60014c4e04984aa17fbc1a89e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4815261539686_ba37a83b8b4a2e146c824d258b433b6a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4815261539686_ba37a83b8b4a2e146c824d258b433b6a1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z3356589663673_e6de475a769ec793a307c89911db9305.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4706005253841_ed6d82b7276d9b8aa6de426d71e53c22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lop.png" />
+    <Content Include="QL_SinhVien.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="QL_SinhVien_log.ldf">
+      <DependentUpon>QL_SinhVien.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.15.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2019 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
